@@ -2,12 +2,17 @@ import ShoppingCartIcon from "@mui/icons-material/ShoppingCart";
 import Navber from "./components/navbar/navbar";
 import Footer from "./components/footer/Footer";
 import AboutPage from "./components/pages/About/AboutPage";
+import Contact from "./components/pages/Contact/Contact";
+import LoginPage from "./components/pages/Register/LoginPage";
 
 function App() {
   return (
     <>
       <Navber />
-      <AboutPage />
+      <LoginPage />
+      {/* <Contact /> */}
+
+      {/* <AboutPage /> */}
       <Footer />
     </>
   );
