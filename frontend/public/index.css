@@ -141,3 +141,26 @@ a {
     justify-content: center;
   }
 }
+
+/* login style */
+
+.auth-tabs {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  margin-bottom: 30px;
+  border-bottom: 1px solid #eee;
+}
+
+.auth-tabs .tab {
+  font-size: 14px;
+  font-weight: 600;
+  color: #cfcfd8;
+  padding-bottom: 10px;
+  cursor: pointer;
+}
+
+.auth-tabs .tab.active {
+  color: #000;
+  border-bottom: 2px solid #000;
+}
