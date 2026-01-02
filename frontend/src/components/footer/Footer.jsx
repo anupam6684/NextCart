@@ -4,6 +4,7 @@ import PhoneIcon from "@mui/icons-material/Phone";
 import FacebookIcon from "@mui/icons-material/Facebook";
 import InstagramIcon from "@mui/icons-material/Instagram";
 import TwitterIcon from "@mui/icons-material/Twitter";
+import ShoppingCartIcon from "@mui/icons-material/ShoppingCart";
 
 export default function Footer() {
   return (
@@ -18,20 +19,20 @@ export default function Footer() {
             <div className="col col-12 col-md-6 col-lg-3  border-end">
               <span>
                 {" "}
-                <ProductionQuantityLimitsIcon /> &nbsp; &nbsp; Everyday fresh
-                products
+                <ShoppingCartIcon /> &nbsp; &nbsp; Everyday fresh products
               </span>
             </div>
             <div className="col col-12 col-md-6 col-lg-3 ps-5 border-end">
               <span>
                 {" "}
-                <i class="fa-regular fa-truck"></i> &nbsp;Free delivery for
+                <i className="fa-regular fa-truck"></i> &nbsp;Free delivery for
                 order over ₹70
               </span>
             </div>
             <div className="col col-12 col-md-6 col-lg-3 ps-5 border-end">
               <span>
-                <i class="fa-solid fa-tag"></i>&nbsp;&nbsp;Daily Mega Discounts
+                <i className="fa-solid fa-tag"></i>&nbsp;&nbsp;Daily Mega
+                Discounts
               </span>
             </div>
             <div
@@ -40,8 +41,8 @@ export default function Footer() {
             >
               <span>
                 {" "}
-                <i class="fa-solid fa-indian-rupee-sign"></i>&nbsp;&nbsp; Best
-                price on the market
+                <i className="fa-solid fa-indian-rupee-sign"></i>&nbsp;&nbsp;
+                Best price on the market
               </span>
             </div>
           </div>
