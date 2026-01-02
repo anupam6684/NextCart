@@ -4,6 +4,7 @@ import PhoneIcon from "@mui/icons-material/Phone";
 import FacebookIcon from "@mui/icons-material/Facebook";
 import InstagramIcon from "@mui/icons-material/Instagram";
 import TwitterIcon from "@mui/icons-material/Twitter";
+import ShoppingCartIcon from "@mui/icons-material/ShoppingCart";
 
 export default function Footer() {
   return (
@@ -18,8 +19,7 @@ export default function Footer() {
             <div className="col col-12 col-md-6 col-lg-3  border-end">
               <span>
                 {" "}
-                <ProductionQuantityLimitsIcon /> &nbsp; &nbsp; Everyday fresh
-                products
+                <ShoppingCartIcon /> &nbsp; &nbsp; Everyday fresh products
               </span>
             </div>
             <div className="col col-12 col-md-6 col-lg-3 ps-5 border-end">
