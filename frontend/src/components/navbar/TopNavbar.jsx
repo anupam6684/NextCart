@@ -8,7 +8,7 @@ export default function TopNavbar() {
           Now!
         </div>
       </div>
-      <div className="border-bottom bg-light py-2 pb-3">
+      <div className="border-bottom bg-light py-1 pb-1">
         <div className="container d-flex justify-content-between align-items-center">
           {/* Left Side - Links */}{" "}
           <div className="d-flex flex-row gap-3">

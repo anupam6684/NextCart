@@ -38,7 +38,7 @@ export default function MenuNavbar() {
 
   return (
     <div
-      className="d-flex flex-wrap align-items-center justify-content-between mt-3"
+      className="d-flex flex-wrap align-items-center justify-content-between mt-1"
       style={{
         gap: "280px",
       }}
