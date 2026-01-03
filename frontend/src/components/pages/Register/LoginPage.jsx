@@ -27,7 +27,10 @@ export default function LoginPage() {
     <div className="container mt-5">
       <div className="row justify-content-center">
         {/* SAME SIZE AS REGISTER */}
-        <div className="col-md-6 border">
+        <div
+          className="col-md-6 border "
+          style={{ backgroundColor: "#F3F3F6" }}
+        >
           <h4 className="text-center my-4">Login</h4>
 
           <form onSubmit={handleSubmit}>

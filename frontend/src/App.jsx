@@ -7,12 +7,14 @@ import Contact from "./components/pages/Contact/Contact";
 import RegisterPage from "./components/pages/Register/RegisterPage";
 import LoginPage from "./components/pages/Register/LoginPage";
 import AuthPage from "./components/pages/Register/AuthPage";
+import HomePage from "./components/pages/Home/HomePage";
 
 function App() {
   return (
     <>
       <Navber />
-      <AuthPage />
+      <HomePage />
+      {/* <AuthPage /> */}
       {/* <RegisterPage />
       <LoginPage /> */}
       {/* <Contact /> */}

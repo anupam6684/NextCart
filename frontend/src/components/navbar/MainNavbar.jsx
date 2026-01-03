@@ -10,7 +10,7 @@ export default function MainNavbar() {
   const [itemCount, setItemCount] = useState(0);
   return (
     <>
-      <div className="border-bottom py-3 bg-white">
+      <div className="border-bottom py-2 bg-white">
         {/* ---------- TOP NAVBAR SECTION ---------- */}
         <div className="container">
           <div className="d-flex justify-content-between align-items-center flex-wrap gap-3">
