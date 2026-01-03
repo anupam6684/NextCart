@@ -50,7 +50,7 @@ export default function Footer() {
 
         {/* this is 2nd part of footer  */}
 
-        <div className="container my-5 py-5">
+        <div className="container my-3">
           <div className="row g-2">
             <div className="col-6 col-sm-4 col-md d-flex flex-column mb-3 text-center">
               <h5>FRUIT & VEGETABLES</h5>

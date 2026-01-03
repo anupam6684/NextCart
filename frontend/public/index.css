@@ -176,3 +176,24 @@ a {
   object-fit: cover; /* fills without distortion */
   object-position: center;
 }
+
+.custom-carousel-btn {
+  width: 35px;
+  height: 35px;
+  background-color: black;
+  border-radius: 50%;
+  border: 1px solid black;
+  opacity: 1;
+}
+
+.custom-carousel-btn:hover {
+  background-color: #333;
+}
+
+/* make arrow icon smaller & white */
+.custom-carousel-btn .carousel-control-prev-icon,
+.custom-carousel-btn .carousel-control-next-icon {
+  width: 15px;
+  height: 15px;
+  filter: invert(1);
+}
