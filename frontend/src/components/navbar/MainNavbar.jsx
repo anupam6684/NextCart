@@ -4,6 +4,7 @@ import Badge from "@mui/material/Badge";
 import AccountCircleIcon from "@mui/icons-material/AccountCircle"; // 👤 MUI User Icon
 import { LocationDropDownMenu, Search } from "./Dropdown";
 import MenuNavbar from "./MenuNavbar";
+import { useNavigate } from "react-router-dom";
 
 export default function MainNavbar() {
   const [cartBalance, setCartBalance] = useState(0.0);
@@ -39,7 +40,9 @@ export default function MainNavbar() {
                   cursor: "pointer",
                 }}
               >
-                <AccountCircleIcon sx={{ fontSize: 30, color: "#333" }} />
+                <button onClick={() => navigate(`/auth`)}>
+                  <AccountCircleIcon sx={{ fontSize: 30, color: "#333" }} />
+                </button>
               </div>
 
               {/* Cart Balance */}

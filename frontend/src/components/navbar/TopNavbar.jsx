@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 export default function TopNavbar() {
   return (
     <>
@@ -12,27 +14,24 @@ export default function TopNavbar() {
         <div className="container d-flex justify-content-between align-items-center">
           {/* Left Side - Links */}{" "}
           <div className="d-flex flex-row gap-3">
-            <a href="/about" className="text-decoration-none text-dark small">
+            <Link to="/about" className="text-decoration-none text-dark small">
               About Us
-            </a>
+            </Link>
 
-            <a href="/account" className="text-decoration-none text-dark small">
+            <Link to="/auth" className="text-decoration-none text-dark small">
               My Account
-            </a>
+            </Link>
 
-            <a
-              href="/wishlist"
+            <Link
+              to="/wishlist"
               className="text-decoration-none text-dark small"
             >
               Wishlist
-            </a>
+            </Link>
 
-            <a
-              href="/track-order"
-              className="text-decoration-none text-dark small"
-            >
+            <Link to="/track" className="text-decoration-none text-dark small">
               Order Tracking
-            </a>
+            </Link>
           </div>
           {/* Right Side - Info Text */}
           <div className="d-flex justify-content-between align-items-center">

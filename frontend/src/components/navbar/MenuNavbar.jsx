@@ -17,6 +17,7 @@ import AcUnitIcon from "@mui/icons-material/AcUnit";
 import CookieIcon from "@mui/icons-material/Cookie";
 import SpaIcon from "@mui/icons-material/Spa";
 import LocalDiningIcon from "@mui/icons-material/LocalDining";
+import { Link } from "react-router-dom";
 
 export default function MenuNavbar() {
   const [anchorEl, setAnchorEl] = useState(null);
@@ -27,13 +28,25 @@ export default function MenuNavbar() {
   const handleClose = () => setAnchorEl(null);
 
   const navLinks = [
-    { text: "HOME", icon: null },
-    { text: "SHOP", icon: null },
-    { text: "MEATS & SEAFOOD", icon: <LocalDiningIcon fontSize="small" /> },
-    { text: "BAKERY", icon: <BakeryDiningIcon fontSize="small" /> },
-    { text: "BEVERAGES", icon: <LocalCafeIcon fontSize="small" /> },
-    { text: "BLOG", icon: null },
-    { text: "CONTACT", icon: null },
+    { text: "HOME", link: "/", icon: null },
+    { text: "SHOP", link: "/products", icon: null },
+    {
+      text: "MEATS & SEAFOOD",
+      link: "/products",
+      icon: <LocalDiningIcon fontSize="small" />,
+    },
+    {
+      text: "BAKERY",
+      link: "/products",
+      icon: <BakeryDiningIcon fontSize="small" />,
+    },
+    {
+      text: "BEVERAGES",
+      link: "/products",
+      icon: <LocalCafeIcon fontSize="small" />,
+    },
+    { text: "BLOG", link: "/blog", icon: null },
+    { text: "CONTACT", link: "/contact", icon: null },
   ];
 
   return (
@@ -117,8 +130,9 @@ export default function MenuNavbar() {
           scrollbarWidth: "none",
         }}
       >
-        {navLinks.map(({ text, icon }) => (
-          <a
+        {navLinks.map(({ text, icon, link }) => (
+          <Link
+            to={link}
             key={text}
             onClick={() => setActiveLink(text)}
             style={{
@@ -136,6 +150,7 @@ export default function MenuNavbar() {
               backgroundColor:
                 activeLink === text ? "rgba(38,183,255,0.1)" : "transparent",
               whiteSpace: "nowrap",
+              textDecoration: "none",
             }}
             onMouseEnter={(e) => {
               e.currentTarget.style.color = "#26b7ff";
@@ -149,7 +164,7 @@ export default function MenuNavbar() {
             }}
           >
             {icon && icon} {text}
-          </a>
+          </Link>
         ))}
       </div>
     </div>

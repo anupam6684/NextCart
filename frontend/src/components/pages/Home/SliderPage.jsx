@@ -4,7 +4,7 @@ export default function SliderPage() {
       id="carouselExampleIndicators"
       className="carousel slide"
       data-bs-ride="carousel"
-      data-bs-interval="2000"
+      data-bs-interval="3000"
       data-bs-pause="false"
     >
       <div className="carousel-indicators">
@@ -57,8 +57,8 @@ export default function SliderPage() {
       </div>
 
       <button
-        type="button"
-        className="carousel-control-prev"
+        type="button "
+        className="carousel-control-prev "
         data-bs-target="#carouselExampleIndicators"
         data-bs-slide="prev"
       >
@@ -66,8 +66,8 @@ export default function SliderPage() {
       </button>
 
       <button
-        type="button"
-        className="carousel-control-next"
+        type="button "
+        className="carousel-control-next "
         data-bs-target="#carouselExampleIndicators"
         data-bs-slide="next"
       >
