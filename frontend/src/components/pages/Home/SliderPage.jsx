@@ -62,7 +62,9 @@ export default function SliderPage() {
         data-bs-target="#carouselExampleIndicators"
         data-bs-slide="prev"
       >
-        <span className="carousel-control-prev-icon"></span>
+        <div className="control-icon">
+          <span className="carousel-control-prev-icon"></span>
+        </div>
       </button>
 
       <button
@@ -71,7 +73,9 @@ export default function SliderPage() {
         data-bs-target="#carouselExampleIndicators"
         data-bs-slide="next"
       >
-        <span className="carousel-control-next-icon"></span>
+        <div className="control-icon">
+          <span className="carousel-control-next-icon "></span>
+        </div>
       </button>
     </div>
   );

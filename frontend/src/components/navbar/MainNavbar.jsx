@@ -4,7 +4,7 @@ import Badge from "@mui/material/Badge";
 import AccountCircleIcon from "@mui/icons-material/AccountCircle"; // 👤 MUI User Icon
 import { LocationDropDownMenu, Search } from "./Dropdown";
 import MenuNavbar from "./MenuNavbar";
-import { useNavigate } from "react-router-dom";
+import { useNavigate, Link } from "react-router-dom";
 
 export default function MainNavbar() {
   const [cartBalance, setCartBalance] = useState(0.0);
@@ -16,14 +16,19 @@ export default function MainNavbar() {
         <div className="container">
           <div className="d-flex justify-content-between align-items-center flex-wrap gap-3">
             {/* logo Section */}
-            <div className="logo-container pe-3">
-              <img
-                src="/logo.png"
-                alt="NextCart-logo"
-                style={{ width: "150px", height: "auto", objectFit: "contain" }}
-              />
-            </div>
-
+            <Link to="/">
+              <div className="logo-container pe-3">
+                <img
+                  src="/logo.png"
+                  alt="NextCart-logo"
+                  style={{
+                    width: "150px",
+                    height: "auto",
+                    objectFit: "contain",
+                  }}
+                />
+              </div>
+            </Link>
             {/* Location Dropdown  */}
             <LocationDropDownMenu />
             {/*  Search Bar */}
@@ -40,9 +45,7 @@ export default function MainNavbar() {
                   cursor: "pointer",
                 }}
               >
-                <button onClick={() => navigate(`/auth`)}>
-                  <AccountCircleIcon sx={{ fontSize: 30, color: "#333" }} />
-                </button>
+                <AccountCircleIcon sx={{ fontSize: 30, color: "#333" }} />
               </div>
 
               {/* Cart Balance */}

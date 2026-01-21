@@ -177,23 +177,39 @@ a {
   object-position: center;
 }
 
-.custom-carousel-btn {
-  width: 35px;
-  height: 35px;
-  background-color: black;
-  border-radius: 50%;
-  border: 1px solid black;
+/* Icon circle */
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  width: auto;
   opacity: 1;
 }
-
-.custom-carousel-btn:hover {
-  background-color: #333;
+.control-icon {
+  width: 45px;
+  height: 45px;
+  background-color: rgba(0, 0, 0, 0.6); /* dark bg */
+  border: 2px solid #fff; /* white border */
+  border-radius: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
 }
 
-/* make arrow icon smaller & white */
-.custom-carousel-btn .carousel-control-prev-icon,
-.custom-carousel-btn .carousel-control-next-icon {
-  width: 15px;
-  height: 15px;
-  filter: invert(1);
+/* products swiper style */
+.product-slider .swiper-button-prev,
+.product-slider .swiper-button-next {
+  width: 28px;
+  height: 28px;
+}
+
+/* Arrow icon size */
+.product-slider .swiper-button-prev::after,
+.product-slider .swiper-button-next::after {
+  font-size: 12px;
+  font-weight: bold;
+}
+
+/* Disabled state */
+.product-slider .swiper-button-disabled {
+  opacity: 0.4;
 }
